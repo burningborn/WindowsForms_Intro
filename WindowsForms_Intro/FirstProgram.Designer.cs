@@ -39,8 +39,9 @@ namespace WindowsForms_Intro
             // CocaCola
             // 
             this.CocaCola.AutoSize = true;
+            this.CocaCola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.CocaCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CocaCola.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.CocaCola.ForeColor = System.Drawing.Color.MediumTurquoise;
             this.CocaCola.Location = new System.Drawing.Point(103, 37);
             this.CocaCola.Name = "CocaCola";
             this.CocaCola.Size = new System.Drawing.Size(81, 17);
@@ -57,6 +58,7 @@ namespace WindowsForms_Intro
             this.JohnnyWalker.Size = new System.Drawing.Size(115, 17);
             this.JohnnyWalker.TabIndex = 3;
             this.JohnnyWalker.Text = "Johnny Walker";
+            this.JohnnyWalker.Click += new System.EventHandler(this.JohnnyWalker_Click);
             // 
             // JackDaniels
             // 
@@ -81,7 +83,7 @@ namespace WindowsForms_Intro
             // 
             // Surprise
             // 
-            this.Surprise.Location = new System.Drawing.Point(140, 111);
+            this.Surprise.Location = new System.Drawing.Point(34, 101);
             this.Surprise.Name = "Surprise";
             this.Surprise.Size = new System.Drawing.Size(199, 150);
             this.Surprise.TabIndex = 1;
@@ -93,7 +95,8 @@ namespace WindowsForms_Intro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 588);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(827, 427);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.JackDaniels);
             this.Controls.Add(this.JohnnyWalker);
@@ -101,7 +104,8 @@ namespace WindowsForms_Intro
             this.Controls.Add(this.Surprise);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "FirstProgram";
-            this.Text = "FirstDesktopProgramm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Aplication";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FirstProgram_FormClosing);
             this.Load += new System.EventHandler(this.FirstProgram_Load);
             this.ResumeLayout(false);

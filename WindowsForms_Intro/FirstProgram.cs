@@ -25,9 +25,7 @@ namespace WindowsForms_Intro
         private void FirstProgram_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult reasult = MessageBox.Show("Вы действительно хотите выйти?",
-                "Выход из приложения", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            
-
+                "Выход из приложения", MessageBoxButtons.YesNo, MessageBoxIcon.Question);        
         }
      
         private void Surprise_Click(object sender, EventArgs e)
@@ -38,6 +36,12 @@ namespace WindowsForms_Intro
         private void Exit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void JohnnyWalker_Click(object sender, EventArgs e)
+        {
+            JohnnyWalker.Text += "\nПасхалка";
+            JohnnyWalker.Font
         }
     }
 }
